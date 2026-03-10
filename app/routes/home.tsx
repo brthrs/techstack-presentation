@@ -5,7 +5,7 @@ import type { TechItem, StackCategory } from "~/data/stack";
 
 export function meta(_args: Route.MetaArgs) {
   return [
-    { title: "Techstack — Our Technology Stack" },
+    { title: "Techstack — Brthrs" },
     {
       name: "description",
       content:
@@ -206,31 +206,17 @@ export default function Home() {
 
         {/* Footer */}
         <div className="mt-24 flex flex-col items-center gap-4 border-t border-white/6 pt-12">
-          <a
-            href="mailto:janwillem@brthrs.nl?subject=Techstack%20Suggestion"
-            className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/6 px-5 py-2 text-sm text-white/70 transition hover:border-white/30 hover:bg-white/10 hover:text-white"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="22" y1="2" x2="11" y2="13" />
-              <polygon points="22 2 15 22 11 13 2 9 22 2" />
-            </svg>
-            Submit a suggestion
-          </a>
-          <div className="flex items-center gap-3">
-            {["React Router v7", "shadcn/ui", "Tailwind CSS v4", "TypeScript"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-white/10 bg-white/3 px-3 py-1 text-xs text-white/40"
-                >
-                  {tech}
-                </span>
-              ),
-            )}
-          </div>
           <p className="text-xs text-white/25">
             This presentation was built with the same stack it proposes.
           </p>
+          <div className="flex items-center gap-2 text-xs text-white/25">
+            <span>Made by</span>
+            <img
+              src="https://brthrs.nl/wp-content/uploads/2020/10/brthrs-logotype-black.svg"
+              alt="brthrs"
+              className="h-4 invert opacity-30"
+            />
+          </div>
         </div>
       </main>
     </div>
