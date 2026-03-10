@@ -14,7 +14,7 @@
 - **Zustand** — state management
 - **TanStack Query** — async data fetching & caching
 - **React Hook Form + Zod** — form handling & schema validation
-- **react-i18next + Tolgee** — internationalization
+- **react-i18next** — internationalization
 - **React Native** — mobile development
 - **Prisma** — ORM
 - **BullMQ** — queue processing & background jobs
